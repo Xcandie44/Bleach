@@ -13,6 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        android:onClick="onStartClick"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="60dp"
         android:text="Начать тест" />
@@ -23,7 +24,6 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_marginTop="107dp"
-        android:onClick="onStartClick"
         android:layout_toStartOf="@+id/button"
         android:text="Приветствую!\n Начнем тест?" />
 </RelativeLayout>

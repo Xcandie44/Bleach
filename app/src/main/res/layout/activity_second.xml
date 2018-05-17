@@ -5,9 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.user.who_are_you_from_bleach.Second"
-    android:background="@drawable/mayuri"
-    >
+    tools:context=".Second"
+    android:background="@drawable/mayuri">
 
     <Button
         android:id="@+id/button3"
@@ -40,4 +39,5 @@
         android:layout_marginBottom="40dp"
         android:layout_marginStart="23dp"
         android:text="Женщина" />
+
 </RelativeLayout>

@@ -22,6 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
+        android:onClick="onYesClick"
         android:layout_alignTop="@+id/no"
         android:layout_marginStart="31dp"
         android:text="Да" />
@@ -31,6 +32,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignEnd="@+id/button8"
+        android:onClick="onNoClick"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="148dp"
         android:text="Нет" />
@@ -39,6 +41,7 @@
         android:id="@+id/maybe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="onMaybeClick"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="39dp"

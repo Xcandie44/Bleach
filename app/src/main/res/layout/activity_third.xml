@@ -5,8 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.user.who_are_you_from_bleach.ThirdActivity"
-    android:background="@drawable/ikkaku">
+    android:background="@drawable/ikkaku"
+    tools:context=".Third">
 
     <Button
         android:id="@+id/button4"
@@ -56,4 +56,6 @@
         android:text="Рукопашный \nбой"
         tools:layout_editor_absoluteX="279dp"
         tools:layout_editor_absoluteY="345dp" />
+
+
 </RelativeLayout>
