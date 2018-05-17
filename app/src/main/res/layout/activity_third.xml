@@ -24,6 +24,7 @@
         android:id="@+id/button5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="onKidoClick"
         android:layout_alignParentStart="true"
         android:layout_alignTop="@+id/button7"
         android:layout_marginStart="22dp"
@@ -35,6 +36,7 @@
         android:id="@+id/button6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="onFencingClick"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="45dp"
@@ -48,9 +50,10 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/button6"
         android:layout_alignParentEnd="true"
+        android:onClick="onFightClick"
         android:layout_marginBottom="90dp"
         android:layout_marginEnd="11dp"
-        android:text="Боевые \nисскуства"
+        android:text="Рукопашный \nбой"
         tools:layout_editor_absoluteX="279dp"
         tools:layout_editor_absoluteY="345dp" />
 </RelativeLayout>
