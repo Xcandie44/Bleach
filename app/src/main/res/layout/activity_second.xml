@@ -9,24 +9,13 @@
     android:background="@drawable/mayuri">
 
     <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="19dp"
-        android:layout_marginTop="121dp"
-        android:text="Ах, новый подопытный.\nЧто же, назови свой пол,\n если он, конечно у тебя есть."
-        android:textSize="12sp" />
-
-    <Button
         android:id="@+id/male"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/female"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/female"
+        android:layout_marginStart="30dp"
         android:onClick="onMaleClick"
-        android:layout_alignBottom="@+id/female"
-        android:layout_toEndOf="@+id/button3"
         android:text="Мужчина" />
 
     <Button
@@ -34,10 +23,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/button3"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="42dp"
+        android:layout_marginEnd="26dp"
         android:onClick="onFemaleClick"
-        android:layout_marginBottom="40dp"
-        android:layout_marginStart="23dp"
         android:text="Женщина" />
 
 </RelativeLayout>
