@@ -12,4 +12,7 @@ public class Sixth extends AppCompatActivity {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         setContentView(R.layout.activity_sixth);
     }
+
+    public void onBackPressed(){
+    }
 }

@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.text.Layout;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     Button b1;
@@ -23,7 +24,9 @@ public class MainActivity extends AppCompatActivity {
     public void onStartClick(View v){
         Intent intent = new Intent(this,Second.class);
         startActivity(intent);
+        overridePendingTransition(R.anim.right,R.anim.left);
+    }
 
-
+    public void onBackPressed(){
     }
 }

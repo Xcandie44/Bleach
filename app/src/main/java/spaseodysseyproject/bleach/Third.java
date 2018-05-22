@@ -18,15 +18,21 @@ public class Third extends AppCompatActivity {
     public void onKidoClick(View v){
         Intent intent = new Intent(this,Fourth.class);
         startActivity(intent);
+        overridePendingTransition(R.anim.right,R.anim.left);
     }
 
     public void onFencingClick(View v){
         Intent intent = new Intent(this,Fourth.class);
         startActivity(intent);
+        overridePendingTransition(R.anim.right,R.anim.left);
     }
 
     public void onFightClick(View v){
         Intent intent = new Intent(this,Fourth.class);
         startActivity(intent);
+        overridePendingTransition(R.anim.right,R.anim.left);
+    }
+
+    public void onBackPressed(){
     }
 }

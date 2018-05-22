@@ -18,16 +18,22 @@ public class Fourth extends AppCompatActivity {
     public void onYesClick(View v){
         Intent intent = new Intent(this,Fifth.class);
         startActivity(intent);
+        overridePendingTransition(R.anim.right,R.anim.left);
     }
 
     public void onNoClick(View v){
         Intent intent = new Intent(this,Fifth.class);
         startActivity(intent);
+        overridePendingTransition(R.anim.right,R.anim.left);
     }
 
     public void onMaybeClick(View v){
         Intent intent = new Intent(this,Fifth.class);
         startActivity(intent);
+        overridePendingTransition(R.anim.right,R.anim.left);
+    }
+
+    public void onBackPressed(){
     }
 
 }

@@ -10,12 +10,12 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="138dp"
+        android:layout_height="63dp"
+        android:background="@null"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="60dp"
-        android:onClick="onStartClick"
-        android:text="Начать тест" />
+        android:layout_marginBottom="51dp"
+        android:onClick="onStartClick" />
 
 </RelativeLayout>

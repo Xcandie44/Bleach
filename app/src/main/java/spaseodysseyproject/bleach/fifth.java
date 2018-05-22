@@ -18,20 +18,27 @@ public class Fifth extends Activity {
     public void onProtectionClick(View v){
         Intent intent = new Intent(this,Sixth.class);
         startActivity(intent);
+        overridePendingTransition(R.anim.right,R.anim.left);
     }
 
     public void onEvolutionClick(View v){
         Intent intent = new Intent(this,Sixth.class);
         startActivity(intent);
+        overridePendingTransition(R.anim.right,R.anim.left);
     }
 
     public void onRevengeClick(View v){
         Intent intent = new Intent(this,Sixth.class);
         startActivity(intent);
+        overridePendingTransition(R.anim.right,R.anim.left);
     }
 
     public void onSaveClick(View v){
         Intent intent = new Intent(this,Sixth.class);
         startActivity(intent);
+        overridePendingTransition(R.anim.right,R.anim.left);
+    }
+
+    public void onBackPressed(){
     }
 }

@@ -6,27 +6,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Second"
-    android:background="@drawable/mayuri">
+    android:background="@drawable/mayuri"
+    android:id="@+id/second">
 
     <Button
         android:id="@+id/male"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="134dp"
+        android:layout_height="85dp"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_alignTop="@+id/female"
-        android:layout_marginStart="30dp"
-        android:onClick="onMaleClick"
-        android:text="Мужчина" />
+        android:layout_marginBottom="24dp"
+        android:background="@null"
+        android:layout_marginStart="11dp"
+        android:onClick="onMaleClick" />
 
     <Button
         android:id="@+id/female"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_width="122dp"
+        android:layout_height="87dp"
         android:layout_alignParentEnd="true"
-        android:layout_marginBottom="42dp"
-        android:layout_marginEnd="26dp"
-        android:onClick="onFemaleClick"
-        android:text="Женщина" />
+        android:layout_alignTop="@+id/male"
+        android:layout_marginEnd="16dp"
+        android:background="@null"
+        android:onClick="onFemaleClick" />
 
 </RelativeLayout>
