@@ -9,53 +9,44 @@
     tools:context=".Fifth">
 
     <Button
-        android:id="@+id/button9"
-        android:layout_width="138dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginEnd="39dp"
-        android:layout_marginTop="77dp"
-        android:text="Назови свою цель в жизни" />
-
-    <Button
         android:id="@+id/button10"
-        android:layout_width="98dp"
-        android:layout_height="67dp"
+        android:layout_width="113dp"
+        android:layout_height="68dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="181dp"
-        android:layout_marginStart="24dp"
+        android:layout_marginBottom="109dp"
+        android:layout_marginStart="13dp"
         android:onClick="onProtectionClick"
-        android:text="Защита близких" />
+        android:background="@null"/>
 
     <Button
         android:id="@+id/button11"
         android:layout_width="122dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="76dp"
-        android:layout_marginStart="49dp"
+        android:layout_alignTop="@+id/button13"
+        android:layout_marginStart="35dp"
         android:onClick="onEvolutionClick"
-        android:text="Достижение силы" />
+        android:background="@null"/>
 
     <Button
         android:id="@+id/button12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="onRevengeClick"
+        android:layout_width="117dp"
+        android:layout_height="65dp"
         android:layout_alignParentEnd="true"
         android:layout_alignTop="@+id/button10"
-        android:layout_marginEnd="24dp"
-        android:text="Месть" />
+        android:layout_marginEnd="12dp"
+        android:onClick="onRevengeClick"
+        android:background="@null"/>
 
     <Button
         android:id="@+id/button13"
         android:layout_width="117dp"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/button9"
-        android:layout_alignTop="@+id/button11"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="29dp"
+        android:layout_marginEnd="48dp"
         android:onClick="onSaveClick"
-        android:text="Сохранение мира" />
+        android:background="@null"/>
 </RelativeLayout>
