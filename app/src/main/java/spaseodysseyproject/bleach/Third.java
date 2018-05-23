@@ -38,20 +38,20 @@ public class Third extends AppCompatActivity {
     public void onBackPressed(){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setCancelable(false)
-                .setMessage("Выйти из приложения?")
-                .setPositiveButton("Да", new DialogInterface.OnClickListener() {
+                .setMessage(R.string.quit)
+                .setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         finishAffinity();
                     }
                 })
-                .setNegativeButton("Нет", new DialogInterface.OnClickListener() {
+                .setNegativeButton(R.string.no, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.cancel();
                     }
                 })
-                .setNeutralButton("Главный экран", new DialogInterface.OnClickListener() {
+                .setNeutralButton(R.string.main, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         intent(MainActivity.class);

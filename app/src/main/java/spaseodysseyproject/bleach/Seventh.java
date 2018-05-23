@@ -2,27 +2,16 @@ package spaseodysseyproject.bleach;
 
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.pm.ActivityInfo;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
 
-public class Sixth extends AppCompatActivity {
+public class Seventh extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
-        setContentView(R.layout.activity_sixth);
-    }
-
-    public void onYesClick(View v){
-        intent(Seventh.class);
-    }
-
-    public void onNoClick(View v){
-        intent(Seventh.class);
+        setContentView(R.layout.activity_seventh);
     }
 
     public void onBackPressed(){
@@ -56,4 +45,5 @@ public class Sixth extends AppCompatActivity {
         Intent intent = new Intent(this,c);
         startActivity(intent);
     }
+
 }

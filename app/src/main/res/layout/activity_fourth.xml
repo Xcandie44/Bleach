@@ -5,46 +5,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/sdadasads"
+    android:background="@drawable/hanataro"
     tools:context=".Fourth">
 
     <Button
-        android:id="@+id/button8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginEnd="35dp"
-        android:layout_marginTop="127dp"
-        android:text="Есть ли у тебя \nкакие-либо комплексы?" />
-
-    <Button
         android:id="@+id/yes"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="105dp"
+        android:layout_height="61dp"
         android:layout_alignParentStart="true"
-        android:onClick="onYesClick"
         android:layout_alignTop="@+id/no"
-        android:layout_marginStart="31dp"
-        android:text="Да" />
+        android:layout_marginStart="20dp"
+        android:onClick="onYesClick"
+        android:background="@null" />
 
     <Button
         android:id="@+id/no"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/button8"
-        android:onClick="onNoClick"
+        android:layout_width="102dp"
+        android:layout_height="58dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="148dp"
-        android:text="Нет" />
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="105dp"
+        android:layout_marginEnd="22dp"
+        android:background="@null"
+        android:onClick="onNoClick" />
 
     <Button
         android:id="@+id/maybe"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="onMaybeClick"
+        android:layout_width="118dp"
+        android:layout_height="66dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="39dp"
-        android:text="Возможно" />
+        android:layout_marginBottom="14dp"
+        android:onClick="onMaybeClick"
+        android:background="@null" />
 </RelativeLayout>
