@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this,Second.class);
         startActivity(intent);
         overridePendingTransition(R.anim.right,R.anim.left);
+        finish();
     }
 
     public void onBackPressed(){

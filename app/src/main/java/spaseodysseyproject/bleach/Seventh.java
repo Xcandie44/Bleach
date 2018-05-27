@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 
 public class Seventh extends AppCompatActivity {
 
@@ -12,6 +13,21 @@ public class Seventh extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_seventh);
+    }
+
+    public void onPowerClick(View v){
+        intent(Eighth.class);
+        overridePendingTransition(R.anim.right,R.anim.left);
+    }
+
+    public void onDeceptionClick(View v){
+        intent(Eighth.class);
+        overridePendingTransition(R.anim.right,R.anim.left);
+    }
+
+    public void onPersuasionClick(View v){
+        intent(Eighth.class);
+        overridePendingTransition(R.anim.right,R.anim.left);
     }
 
     public void onBackPressed(){
@@ -44,6 +60,7 @@ public class Seventh extends AppCompatActivity {
     public void intent(Class c){
         Intent intent = new Intent(this,c);
         startActivity(intent);
+        finish();
     }
 
 }

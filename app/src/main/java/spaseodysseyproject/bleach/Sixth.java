@@ -18,11 +18,14 @@ public class Sixth extends AppCompatActivity {
     }
 
     public void onYesClick(View v){
+
         intent(Seventh.class);
+        overridePendingTransition(R.anim.right,R.anim.left);
     }
 
     public void onNoClick(View v){
         intent(Seventh.class);
+        overridePendingTransition(R.anim.right,R.anim.left);
     }
 
     public void onBackPressed(){
@@ -55,5 +58,6 @@ public class Sixth extends AppCompatActivity {
     public void intent(Class c){
         Intent intent = new Intent(this,c);
         startActivity(intent);
+        finish();
     }
 }

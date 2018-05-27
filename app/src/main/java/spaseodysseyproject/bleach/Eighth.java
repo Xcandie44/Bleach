@@ -1,44 +1,54 @@
 package spaseodysseyproject.bleach;
 
-import android.app.Activity;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.pm.ActivityInfo;
-import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.support.v7.app.AlertDialog;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.view.View;
+import android.widget.RelativeLayout;
 
-public class Fifth extends Activity {
+public class Eighth extends AppCompatActivity {
+    RelativeLayout r;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
-        setContentView(R.layout.activity_fifth);
+        setContentView(R.layout.activity_eighth);
+        r = (RelativeLayout) findViewById(R.id.eighth);
     }
 
-    public void onProtectionClick(View v){
-        Intent intent = new Intent(this,Sixth.class);
-        startActivity(intent);
-        overridePendingTransition(R.anim.right,R.anim.left);
+    public void onYes(View v){
+        CountDownTimer c = new CountDownTimer(1500, 100){
+            @Override
+            public void onTick(long millisUntilFinished) {
+                r.setBackgroundResource(R.drawable.ulquiorra2);
+            }
+
+            @Override
+            public void onFinish() {
+                intent(Nineth.class);
+                overridePendingTransition(R.anim.right,R.anim.left);
+            }
+
+        }.start();
     }
 
-    public void onEvolutionClick(View v){
-        Intent intent = new Intent(this,Sixth.class);
-        startActivity(intent);
-        overridePendingTransition(R.anim.right,R.anim.left);
-    }
+    public void onNo(View v){
+        CountDownTimer c = new CountDownTimer(1500, 100){
+            @Override
+            public void onTick(long millisUntilFinished) {
+                r.setBackgroundResource(R.drawable.ulquiorra3);
+            }
 
-    public void onRevengeClick(View v){
-        Intent intent = new Intent(this,Sixth.class);
-        startActivity(intent);
-        overridePendingTransition(R.anim.right,R.anim.left);
-    }
+            @Override
+            public void onFinish() {
+                intent(Nineth.class);
+                overridePendingTransition(R.anim.right,R.anim.left);
+            }
 
-    public void onSaveClick(View v){
-        Intent intent = new Intent(this,Sixth.class);
-        startActivity(intent);
-        overridePendingTransition(R.anim.right,R.anim.left);
+        }.start();
     }
 
     public void onBackPressed(){
@@ -67,6 +77,7 @@ public class Fifth extends Activity {
         AlertDialog alertDialog = builder.create();
         alertDialog.show();
     }
+
     public void intent(Class c){
         Intent intent = new Intent(this,c);
         startActivity(intent);

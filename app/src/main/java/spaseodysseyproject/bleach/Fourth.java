@@ -65,6 +65,7 @@ public class Fourth extends AppCompatActivity {
     public void intent(Class c){
         Intent intent = new Intent(this,c);
         startActivity(intent);
+        finish();
     }
 
 }
