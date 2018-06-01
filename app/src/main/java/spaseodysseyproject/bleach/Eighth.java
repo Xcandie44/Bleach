@@ -2,6 +2,7 @@ package spaseodysseyproject.bleach;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.CountDownTimer;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -16,11 +17,12 @@ public class Eighth extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_eighth);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         r = (RelativeLayout) findViewById(R.id.eighth);
     }
 
     public void onYes(View v){
-        CountDownTimer c = new CountDownTimer(1500, 100){
+        CountDownTimer c = new CountDownTimer(1700, 100){
             @Override
             public void onTick(long millisUntilFinished) {
                 r.setBackgroundResource(R.drawable.ulquiorra2);
@@ -36,7 +38,7 @@ public class Eighth extends AppCompatActivity {
     }
 
     public void onNo(View v){
-        CountDownTimer c = new CountDownTimer(1500, 100){
+        CountDownTimer c = new CountDownTimer(1700, 100){
             @Override
             public void onTick(long millisUntilFinished) {
                 r.setBackgroundResource(R.drawable.ulquiorra3);

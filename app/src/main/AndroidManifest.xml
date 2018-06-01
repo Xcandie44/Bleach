@@ -23,7 +23,8 @@
         <activity android:name=".Third" />
         <activity android:name=".Seventh" />
         <activity android:name=".Eighth" />
-        <activity android:name=".Nineth"></activity>
+        <activity android:name=".Nineth" />
+        <activity android:name=".Tenth"></activity>
     </application>
 
 </manifest>

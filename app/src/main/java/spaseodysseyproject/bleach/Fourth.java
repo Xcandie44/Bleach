@@ -3,36 +3,70 @@ package spaseodysseyproject.bleach;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.os.CountDownTimer;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.RelativeLayout;
 
 public class Fourth extends AppCompatActivity {
+    RelativeLayout r;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         setContentView(R.layout.activity_fourth);
+        r  = findViewById(R.id.Fourth);
     }
 
     public void onYesClick(View v){
-        Intent intent = new Intent(this,Fifth.class);
-        startActivity(intent);
-        overridePendingTransition(R.anim.right,R.anim.left);
+        CountDownTimer c = new CountDownTimer(1700, 100){
+            @Override
+            public void onTick(long millisUntilFinished) {
+                r.setBackgroundResource(R.drawable.hanataro3);
+            }
+
+            @Override
+            public void onFinish() {
+                intent(Fifth.class);
+                overridePendingTransition(R.anim.right,R.anim.left);
+            }
+
+        }.start();
     }
 
     public void onNoClick(View v){
-        Intent intent = new Intent(this,Fifth.class);
-        startActivity(intent);
-        overridePendingTransition(R.anim.right,R.anim.left);
+        CountDownTimer c = new CountDownTimer(1700, 100){
+            @Override
+            public void onTick(long millisUntilFinished) {
+                r.setBackgroundResource(R.drawable.hanataro2);
+            }
+
+            @Override
+            public void onFinish() {
+                intent(Fifth.class);
+                overridePendingTransition(R.anim.right,R.anim.left);
+            }
+
+        }.start();
     }
 
     public void onMaybeClick(View v){
-        Intent intent = new Intent(this,Fifth.class);
-        startActivity(intent);
-        overridePendingTransition(R.anim.right,R.anim.left);
+        CountDownTimer c = new CountDownTimer(1700, 100){
+            @Override
+            public void onTick(long millisUntilFinished) {
+                r.setBackgroundResource(R.drawable.hanataro4);
+            }
+
+            @Override
+            public void onFinish() {
+                intent(Fifth.class);
+                overridePendingTransition(R.anim.right,R.anim.left);
+            }
+
+        }.start();
     }
 
     public void onBackPressed(){

@@ -1,9 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/Nineth"
+    android:background="@drawable/yoruichi"
     tools:context=".Nineth">
 
-</android.support.constraint.ConstraintLayout>
+    <Button
+        android:id="@+id/button16"
+        android:layout_width="131dp"
+        android:layout_height="60dp"
+        android:background="@null"
+        android:onClick="onOptimism"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="69dp"
+        android:layout_marginStart="17dp"
+        />
+
+    <Button
+        android:id="@+id/button17"
+        android:layout_width="133dp"
+        android:layout_height="62dp"
+        android:onClick="onPessimism"
+        android:background="@null"
+        android:layout_alignBottom="@+id/button16"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="18dp"
+         />
+</RelativeLayout>
