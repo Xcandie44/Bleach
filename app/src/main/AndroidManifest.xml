@@ -24,7 +24,9 @@
         <activity android:name=".Seventh" />
         <activity android:name=".Eighth" />
         <activity android:name=".Nineth" />
-        <activity android:name=".Tenth"></activity>
+        <activity android:name=".Tenth" />
+        <activity android:name=".Results" />
+        <activity android:name=".CharacterList"></activity>
     </application>
 
 </manifest>

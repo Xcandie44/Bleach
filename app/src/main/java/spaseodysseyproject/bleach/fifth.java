@@ -23,6 +23,8 @@ public class Fifth extends Activity {
     }
 
     public void onProtectionClick(View v){
+        Result.res[0]+=1;
+        Result.res[3]+=1;
         CountDownTimer c = new CountDownTimer(1500, 100){
             @Override
             public void onTick(long millisUntilFinished) {
@@ -39,6 +41,8 @@ public class Fifth extends Activity {
     }
 
     public void onEvolutionClick(View v){
+        Result.res[1]+=1;
+        Result.res[4]+=1;
         CountDownTimer c = new CountDownTimer(1500, 100){
             @Override
             public void onTick(long millisUntilFinished) {
@@ -71,6 +75,7 @@ public class Fifth extends Activity {
     }
 
     public void onSaveClick(View v){
+        Result.res[2]+=1;
         CountDownTimer c = new CountDownTimer(1500, 100){
             @Override
             public void onTick(long millisUntilFinished) {

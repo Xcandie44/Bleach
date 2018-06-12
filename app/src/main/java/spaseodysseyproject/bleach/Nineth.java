@@ -22,6 +22,10 @@ public class Nineth extends AppCompatActivity {
     }
 
     public void onOptimism(View v){
+        Result.res[1]+=1;
+        Result.res[2]+=1;
+        Result.res[3]+=1;
+        Result.res[4]+=1;
         CountDownTimer c = new CountDownTimer(1700, 100){
             @Override
             public void onTick(long millisUntilFinished) {
@@ -30,7 +34,7 @@ public class Nineth extends AppCompatActivity {
 
             @Override
             public void onFinish() {
-                intent(Tenth.class);
+                intent(Results.class);
                 overridePendingTransition(R.anim.right,R.anim.left);
             }
 
@@ -38,6 +42,7 @@ public class Nineth extends AppCompatActivity {
     }
 
     public void onPessimism(View v){
+        Result.res[0]+=1;
         CountDownTimer c = new CountDownTimer(1700, 100){
             @Override
             public void onTick(long millisUntilFinished) {
@@ -46,7 +51,7 @@ public class Nineth extends AppCompatActivity {
 
             @Override
             public void onFinish() {
-                intent(Tenth.class);
+                intent(Results.class);
                 overridePendingTransition(R.anim.right,R.anim.left);
             }
 

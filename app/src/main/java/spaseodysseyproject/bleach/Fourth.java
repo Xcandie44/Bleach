@@ -22,6 +22,9 @@ public class Fourth extends AppCompatActivity {
     }
 
     public void onYesClick(View v){
+        Result.res[2]+=1;
+        Result.res[3]+=1;
+        Result.res[4]+=1;
         CountDownTimer c = new CountDownTimer(1700, 100){
             @Override
             public void onTick(long millisUntilFinished) {
@@ -38,6 +41,7 @@ public class Fourth extends AppCompatActivity {
     }
 
     public void onNoClick(View v){
+        Result.res[1]+=1;
         CountDownTimer c = new CountDownTimer(1700, 100){
             @Override
             public void onTick(long millisUntilFinished) {
@@ -54,6 +58,7 @@ public class Fourth extends AppCompatActivity {
     }
 
     public void onMaybeClick(View v){
+        Result.res[0]+=1;
         CountDownTimer c = new CountDownTimer(1700, 100){
             @Override
             public void onTick(long millisUntilFinished) {
@@ -62,7 +67,7 @@ public class Fourth extends AppCompatActivity {
 
             @Override
             public void onFinish() {
-                intent(Fifth.class);
+                intent(CharacterList.class);
                 overridePendingTransition(R.anim.right,R.anim.left);
             }
 

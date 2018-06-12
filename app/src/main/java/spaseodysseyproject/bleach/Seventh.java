@@ -22,6 +22,10 @@ public class Seventh extends AppCompatActivity {
     }
 
     public void onPowerClick(View v){
+        Result.res[0]+=1;
+        Result.res[1]+=1;
+        Result.res[2]+=1;
+        Result.res[4]+=1;
         CountDownTimer c = new CountDownTimer(1700, 100){
             @Override
             public void onTick(long millisUntilFinished) {
@@ -38,6 +42,7 @@ public class Seventh extends AppCompatActivity {
     }
 
     public void onDeceptionClick(View v){
+        Result.res[3]+=1;
         CountDownTimer c = new CountDownTimer(1700, 100){
             @Override
             public void onTick(long millisUntilFinished) {

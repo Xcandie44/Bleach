@@ -8,10 +8,12 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.RelativeLayout;
 
 public class Second extends AppCompatActivity {
     RelativeLayout r;
+    Button male,female;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,10 +21,17 @@ public class Second extends AppCompatActivity {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         setContentView(R.layout.activity_second);
         r = (RelativeLayout) findViewById(R.id.second);
+        male = findViewById(R.id.male);
+        female = findViewById(R.id.female);
     }
 
     public void onMaleClick(View v){
-
+        Result.res[0]+=1;
+        Result.res[1]+=1;
+        Result.res[3]+=1;
+        Result.res[4]+=1;
+        male.setVisibility(View.INVISIBLE);
+        female.setVisibility(View.INVISIBLE);
         CountDownTimer c = new CountDownTimer(1500, 100){
             @Override
             public void onTick(long millisUntilFinished) {
@@ -40,6 +49,9 @@ public class Second extends AppCompatActivity {
     }
 
     public void onFemaleClick(View v){
+        Result.res[2]+=1;
+        male.setVisibility(View.INVISIBLE);
+        female.setVisibility(View.INVISIBLE);
         CountDownTimer c = new CountDownTimer(1500, 100){
             @Override
             public void onTick(long millisUntilFinished) {

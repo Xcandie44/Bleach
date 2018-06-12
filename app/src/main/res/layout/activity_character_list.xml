@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CharacterList">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TableRow>
+
+            <ImageView
+                android:layout_weight="1"
+                android:id="@+id/ichigo"
+                android:layout_width="40dp"
+                android:layout_height="100dp"
+                android:background="@drawable/ichigochibiheaddark"
+                />
+
+            <ImageView
+                android:layout_weight="1"
+                android:id="@+id/rukia"
+                android:layout_width="40dp"
+                android:layout_height="100dp"
+                android:background="@drawable/rukiachibiheaddark" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="40dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="@drawable/chadchibihead"/>
+
+            <ImageView
+                android:layout_weight="1"
+                android:id="@+id/imageView5"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/rengichibihead" />
+
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
